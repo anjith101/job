@@ -9,11 +9,10 @@ def index():
 
     if request.method == "POST":
         city = request.form['city']
-        country = request.form['country']
         api_key = "c048d46cbd48a21a01434f89363af3be"
 
         weather_url = requests.get(
-            f'http://api.openweathermap.org/data/2.5/weather?appid={api_key}&q={city},{country}&units=metric')
+            f'http://api.openweathermap.org/data/2.5/weather?appid={api_key}&q={city}&units=metric')
 
         weather_data = weather_url.json()
 
@@ -24,3 +23,6 @@ def index():
         return render_template("result.html", temp=temp, humidity=humidity, wind_speed=wind_speed, city=city)
 
     return render_template("index.html")
+
+if __name__ == '__main__':
+    app.run(debug=True)
