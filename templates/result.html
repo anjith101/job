@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div style="background-color: rgb(19, 158, 163); height: 100vh">
+<div style="background-image: url('https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450_960_720.jpg');background-repeat: no-repeat; height: 100vh;background-size: cover;background-position: center;">
     <div class="container h-100">
         <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
                 <div class="card border-0 p-3 shadow-sm text-center">
-                    <h3 class="text-muted">Current Weather For {{ city }}</h3>
-                    <h5 class="lead text-muted">Temperature: {{ temp }} C</h5>
-                    <h5 class="lead text-muted">Humidity: {{ humidity }}%</h5>
-                    <h5 class="lead text-muted">Wind Speed: {{ wind_speed }} Kmh</h5>
+                    <h3 class="text-dark">Current Weather For {{ city }}</h3>
+                    <h5 class="lead text-body">Temperature: {{ temp }} C</h5>
+                    <h5 class="lead text-body">Humidity: {{ humidity }}%</h5>
+                    <h5 class="lead text-body">Wind Speed: {{ wind_speed }} Kmh</h5>
                 </div>
             </div>
         </div>
