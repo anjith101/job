@@ -6,10 +6,10 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
                 <div class="card border-0 p-3 shadow-sm text-center">
-                    <h3 class="text-dark">Current Weather For {{ city }}</h3>
-                    <h5 class="lead text-body">Temperature: {{ temp }} C</h5>
-                    <h5 class="lead text-body">Humidity: {{ humidity }}%</h5>
-                    <h5 class="lead text-body">Wind Speed: {{ wind_speed }} Kmh</h5>
+                    <h3 class="text-dark">Current Weather For {{ weather.name }}</h3>
+                    <h5 class="lead text-body">Temperature: {{ weather.main.temp }} C</h5>
+                    <h5 class="lead text-body">Humidity: {{ weather.main.humidity }}%</h5>
+                    <h5 class="lead text-body">Wind Speed: {{ weather.wind.speed }} Kmh</h5>
                 </div>
             </div>
         </div>

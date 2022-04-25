@@ -15,11 +15,17 @@ def index():
 
         weather_data = weather_url.json()
 
-        temp = round(weather_data['main']['temp'])
-        humidity = weather_data['main']['humidity']
-        wind_speed = weather_data['wind']['speed']
+        out_file = open("myfile.json", "w") 
+    
+        json.dump(weather_data, out_file, indent = 6)
+        out_file.close()
 
-        return render_template("result.html", temp=temp, humidity=humidity, wind_speed=wind_speed, city=city)
+        file_read = open("myfile.json", "r")
+
+        data = json.load(file_read)
+        file_read.close()
+
+        return render_template("result.html",weather = data)
 
     return render_template("index.html")
 
