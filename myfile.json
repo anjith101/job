@@ -1,44 +1,44 @@
 {
       "coord": {
-            "lon": 74.8667,
-            "lat": 32.7333
+            "lon": 77.2167,
+            "lat": 28.6667
       },
       "weather": [
             {
-                  "id": 803,
-                  "main": "Clouds",
-                  "description": "broken clouds",
-                  "icon": "04d"
+                  "id": 211,
+                  "main": "Thunderstorm",
+                  "description": "thunderstorm",
+                  "icon": "11n"
             }
       ],
       "base": "stations",
       "main": {
-            "temp": 37.31,
-            "feels_like": 34.51,
-            "temp_min": 37.31,
-            "temp_max": 37.31,
-            "pressure": 1001,
-            "humidity": 11,
-            "sea_level": 1001,
-            "grnd_level": 962
+            "temp": 33.05,
+            "feels_like": 30.66,
+            "temp_min": 33.05,
+            "temp_max": 36.28,
+            "pressure": 1009,
+            "humidity": 8
       },
-      "visibility": 10000,
+      "visibility": 800,
       "wind": {
-            "speed": 3.8,
-            "deg": 316,
-            "gust": 5.53
+            "speed": 10.29,
+            "deg": 270,
+            "gust": 20.58
       },
       "clouds": {
-            "all": 64
+            "all": 75
       },
-      "dt": 1650889112,
+      "dt": 1650905065,
       "sys": {
+            "type": 1,
+            "id": 9165,
             "country": "IN",
-            "sunrise": 1650845991,
-            "sunset": 1650893816
+            "sunrise": 1650845749,
+            "sunset": 1650892930
       },
       "timezone": 19800,
-      "id": 1269321,
-      "name": "Jammu",
+      "id": 1273294,
+      "name": "Delhi",
       "cod": 200
 }
